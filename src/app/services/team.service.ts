@@ -15,7 +15,7 @@ export class TeamService {
   constructor(private db: AngularFireDatabase) {
     this.teamsDb = this.db.list('/teams', ref => ref.orderByChild('name'));
   }
-  getPlayers(): Observable<Team[]>{
+  getTeams(): Observable<Team[]>{
     return this.teamsDb.snapshotChanges().pipe(
       map(changes => {
         return changes.map(c => ({$key: c.payload.key, ...c.payload.val()}));
