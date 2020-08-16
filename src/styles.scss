@@ -5,7 +5,7 @@ body {
   section {
     margin: 50px;
   }
-  
+
   h1 {
     font-size: 30px;
     color: #fff;
@@ -26,14 +26,14 @@ body {
     margin-top: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
   }
-  
+
   .tbl-content-player {
     overflow-x: auto;
     margin-top: 0px;
     border: 1px solid rgba(255, 255, 255, 0.3);
     height: 300px;
   }
-  
+
   th {
     padding: 20px 15px;
     text-align: left;
@@ -52,7 +52,7 @@ body {
     color: #fff;
     border-bottom: solid 1px rgba(255, 255, 255, 0.1);
   }
-  
+
   .modal-window {
     position: fixed;
     background-color: rgba(255, 255, 255, 0.25);
@@ -89,7 +89,6 @@ body {
       color: #333333;
     }
   }
-  
   .modal-close {
     color: #aaa;
     line-height: 50px;
@@ -104,12 +103,12 @@ body {
       color: #000;
     }
   }
-  
+
   form {
     .form-group {
       padding-bottom: 15px;
     }
-  
+
     input,
     textarea,
     select {
@@ -126,11 +125,11 @@ body {
       padding-left: 5px;
       padding-right: 5px;
     }
-  
+
     select {
       width: 246px;
     }
-  
+
     label {
       font-size: 14px;
       color: #555555;
@@ -142,15 +141,15 @@ body {
       text-align: right;
       width: 140px;
     }
-  
+
     .checkbox {
       width: auto;
     }
-  
+
     .submit-container {
       text-align: right;
     }
-  
+
     .submit {
       background-color: #25b7c4;
       border: solid 1px #25c481;
@@ -170,35 +169,35 @@ body {
     &.required label {
       font-weight: bold;
     }
-  
+
     span.required label {
       font-weight: bold;
     }
   }
-  
+
   /* Demo Styles */
-  
+
   html,
   body {
     height: 100%;
   }
-  
+
   body {
     font: 600 18px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen-Sans, Ubuntu, Cantarell, 'Helvetica Neue', sans-serif;
     background-color: #f69d75;
     color: #555555;
   }
-  
+
   a {
     color: inherit;
   }
-  
+
   .container {
     justify-content: center;
     align-items: center;
     height: 50px;
   }
-  
+
   .btn {
     background-color: #fff;
     padding: 1em 1.5em;
@@ -208,7 +207,7 @@ body {
       padding-right: 0.3em;
     }
   }
-  
+
   ::-webkit-scrollbar {
     width: 6px;
   }
