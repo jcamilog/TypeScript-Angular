@@ -1,7 +1,7 @@
 <div id="open-modal" class="modal-window">
     <div>
         <a href="#" title="Close" class="modal-close">Close</a>
-        <h1>New Player Form</h1>
+        <h1> {{ player ? "Edit Player Form" : "New Player Form"}}</h1>
         <div>
             <form #playerForm="ngForm" novalidate (ngSubmit)="onSubmit(playerForm)">
                 <div class="form-group">
@@ -14,7 +14,7 @@
                 </div>
                 <div class="form-group">
                     <label for="position">Position</label>
-                    <select class="form-control" name="position" [ngModel]="player?.position" (ngModelChange)="player.position = $event" ngModel required>
+                    <select class="form-control" name="position" [ngModel]="player?.position" (ngModelChange)="player.position = $event">
                         <option *ngFor="let position of squadNumber" [value]="position.key" > {{position.label}}</option>
                     </select>
                 </div>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="form-group">
                     <label for="nationality">Nationality</label>
-                    <select class="form-control" name="nationality" [ngModel]="player?.nationality" ngModel required>
+                    <select class="form-control" name="nationality" [ngModel]="player?.nationality">
                         <option *ngFor="let nationality of country" [value]="nationality.key"> {{nationality.label}} </option>
                     </select>
                 </div>
