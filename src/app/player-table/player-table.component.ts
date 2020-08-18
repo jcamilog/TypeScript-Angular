@@ -15,14 +15,14 @@ export class PlayerTableComponent implements OnInit {
 
   constructor(private playerService: PlayerService) { }
 
-  ngOnInit(): void {
+  ngOnInit(){
     this.players$ = this.playerService.getPlayers();
   }
   newPlayer(){
     this.showModal = true;
     this.selectedPlayer = null;
     setTimeout(() => {
-      window.location.replace('#open');
+      window.location.replace('#open-modal');
     });
   }
 
